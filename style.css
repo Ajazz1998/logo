@@ -40,6 +40,11 @@ li{
     list-style: none;
 }
 
+.fa-bars{
+    font-size: 25px;
+    display: none;
+}
+
 .logo a{
     color: var(--black-color);
 }
@@ -554,6 +559,89 @@ input[type]{
 
 @media screen and (max-width:950px) {
     .navbar{
+        display: none;
+    }
+
+    .navbar li{
+        margin: 10px 0;
+    }
+
+    .fa-bars{
         display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .s-boxs, .p-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-left::after {
+        content: "";
+        display: none;
+    }
+
+    .subbit{
+        padding: 12px 120px;
+    }
+
+    .contact_form{
+        display: block;
+    }
+
+    
+     input[type], textarea{
+         width: 100%;
+     }
+
+     .message{
+        margin: 50px 0;
+    }
+}
+
+    @media screen and (max-width:800px) {
+        .about {
+            display: block;
+
+        }
+
+        .about_content{
+            margin-bottom: 20px;
+        } 
+    }
+
+    @media screen and (max-width:800px) {
+        .about {
+            display: block;
+
+        }
+
+        .about_content{
+            margin-bottom: 20px;
+        }
+}
+
+@media screen and (max-width:530px) {
+    .contents {
+        top: 40%;
+        width: 60%;
+    }
+
+    .black-line {
+         left: 3%;
+    }
+
+    .arrow {
+        left: 51%;
+    }
+
+    .s-boxs, .p-boxes {
+        display: block;
+    }
+
+    .p-boxes .img{
+        margin: 10px auto;
     }
 }
